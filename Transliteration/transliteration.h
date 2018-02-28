@@ -4,6 +4,12 @@
 #include <QWidget>
 #include <QString>
 #include <QClipboard>
+#include <QApplication>
+#include <QFile>
+#include <QTextStream>
+#include <fstream>
+#include <QList>
+#include <QPair>
 
 #include "transliterationmethods.h"
 
@@ -22,6 +28,7 @@ public:
 public slots:
     void translateButtonProcessing();
     void bufferButtonProcessing();
+
 
 private:
     Ui::Transliteration *ui;
