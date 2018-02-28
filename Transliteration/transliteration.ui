@@ -1,20 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>Transliteration</class>
- <widget class="QWidget" name="Transliteration" >
-  <property name="geometry" >
+ <widget class="QWidget" name="Transliteration">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>598</width>
+    <height>242</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>Transliteration</string>
   </property>
+  <widget class="QPushButton" name="swapButton">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>100</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Копировать в буфер</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="firstTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>201</width>
+     <height>211</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="secondTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>20</y>
+     <width>201</width>
+     <height>211</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bufferButton">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>200</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>swap</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>20</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Научная</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ГОСТ 7.79-2000 (Система А)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ГОСТ 7.79-2000 (Система B)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ГОСТ 16876-71 (Таблица 2)</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="translateButton">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>60</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Перевести</string>
+   </property>
+  </widget>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
 </ui>

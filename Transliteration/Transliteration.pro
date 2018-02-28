@@ -25,10 +25,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        transliteration.cpp
+        transliteration.cpp \
+    transliterationmethods.cpp
 
 HEADERS += \
-        transliteration.h
+        transliteration.h \
+    transliterationmethods.h
 
 FORMS += \
         transliteration.ui

@@ -2,6 +2,10 @@
 #define TRANSLITERATION_H
 
 #include <QWidget>
+#include <QString>
+#include <QClipboard>
+
+#include "transliterationmethods.h"
 
 namespace Ui {
 class Transliteration;
@@ -15,8 +19,13 @@ public:
     explicit Transliteration(QWidget *parent = 0);
     ~Transliteration();
 
+public slots:
+    void translateButtonProcessing();
+    void bufferButtonProcessing();
+
 private:
     Ui::Transliteration *ui;
+    TransliterationMethods transliterationMethods;
 };
 
 #endif // TRANSLITERATION_H
