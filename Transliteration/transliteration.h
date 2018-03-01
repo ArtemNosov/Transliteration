@@ -28,7 +28,7 @@ public:
 public slots:
     void translateButtonProcessing();
     void bufferButtonProcessing();
-
+   // bool isRusSymbol(QChar symbol);
 
 private:
     Ui::Transliteration *ui;

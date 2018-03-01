@@ -8,156 +8,172 @@ TransliterationMethods::TransliterationMethods(){
 }
 
 void TransliterationMethods::Nauchnuaya(){
-    map.clear();
+    rusMap.clear();
     setStandartSymbols();
-    map["е"] = "e";
-    map["ё"] = "ё";
-    map["ж"] = "ž";
-    map["и"] = "i";
-    map["й"] = "j";
-    map["х"] = "ch";
-    map["ц"] = "c";
-    map["ч"] = "č";
-    map["ш"] = "š";
-    map["щ"] = "šč";
-    map["ъ"] = "\"";
-    map["ы"] = "y";
-    map["ь"] = "′";
-    map["э"] = "è";
-    map["ю"] = "ju";
-    map["я"] = "ja";
+    rusMap["е"] = "e";
+    rusMap["ё"] = "ё";
+    rusMap["ж"] = "ž";
+    rusMap["и"] = "i";
+    rusMap["й"] = "j";
+    rusMap["х"] = "x";
+    rusMap["ц"] = "c";
+    rusMap["ч"] = "č";
+    rusMap["ш"] = "š";
+    rusMap["щ"] = "šč";
+    rusMap["ъ"] = "\"";
+    rusMap["ы"] = "y";
+    rusMap["ь"] = "′";
+    rusMap["э"] = "è";
+    rusMap["ю"] = "ju";
+    rusMap["я"] = "ja";
+    setEngMap();
     setUppercase();
-    transliterationMethod.push_back(map);
+    transliterationRusMethod.push_back(rusMap);
 }
 
 void TransliterationMethods::GOST7792000SystemA(){
-    map.clear();
+    rusMap.clear();
     setStandartSymbols();
-    map["е"] = "e";
-    map["ё"] = "ё";
-    map["ж"] = "ž";
-    map["и"] = "i";
-    map["й"] = "j";
-    map["х"] = "h";
-    map["ц"] = "c";
-    map["ч"] = "č";
-    map["ш"] = "š";
-    map["щ"] = "ŝ";
-    map["ъ"] = "\"";
-    map["ы"] = "y";
-    map["ь"] = "′";
-    map["э"] = "è";
-    map["ю"] = "û";
-    map["я"] = "â";
+    rusMap["е"] = "e";
+    rusMap["ё"] = "ё";
+    rusMap["ж"] = "ž";
+    rusMap["и"] = "i";
+    rusMap["й"] = "j";
+    rusMap["х"] = "h";
+    rusMap["ц"] = "c";
+    rusMap["ч"] = "č";
+    rusMap["ш"] = "š";
+    rusMap["щ"] = "ŝ";
+    rusMap["ъ"] = "\"";
+    rusMap["ы"] = "y";
+    rusMap["ь"] = "′";
+    rusMap["э"] = "è";
+    rusMap["ю"] = "û";
+    rusMap["я"] = "â";
+    setEngMap();
     setUppercase();
-    transliterationMethod.push_back(map);
+    transliterationRusMethod.push_back(rusMap);
 }
 
 void TransliterationMethods::GOST7792000SystemB(){
-    map.clear();
+    rusMap.clear();
     setStandartSymbols();
-    map["е"] = "e";
-    map["ё"] = "yo";
-    map["ж"] = "zh";
-    map["и"] = "i";
-    map["й"] = "j";
-    map["х"] = "x";
-    map["ц"] = "cz";
-    map["ч"] = "ch";
-    map["ш"] = "sh";
-    map["щ"] = "shh";
-    map["ъ"] = "``";
-    map["ы"] = "y`";
-    map["ь"] = "`";
-    map["э"] = "e`";
-    map["ю"] = "yu";
-    map["я"] = "ya";
+    rusMap["е"] = "e";
+    rusMap["ё"] = "yo";
+    rusMap["ж"] = "zh";
+    rusMap["и"] = "i";
+    rusMap["й"] = "j";
+    rusMap["х"] = "x";
+    rusMap["ц"] = "c";
+    rusMap["ч"] = "ch";
+    rusMap["ш"] = "sh";
+    rusMap["щ"] = "shh";
+    rusMap["ъ"] = "``";
+    rusMap["ы"] = "y`";
+    rusMap["ь"] = "`";
+    rusMap["э"] = "e`";
+    rusMap["ю"] = "yu";
+    rusMap["я"] = "ya";
+    setEngMap();
     setUppercase();
-    transliterationMethod.push_back(map);
+    transliterationRusMethod.push_back(rusMap);
 }
 
 void TransliterationMethods::GOST1687671Table2(){
-    map.clear();
+    rusMap.clear();
     setStandartSymbols();
-    map["е"] = "e";
-    map["ё"] = "jo";
-    map["ж"] = "zh";
-    map["и"] = "i";
-    map["й"] = "jj";
-    map["х"] = "kh";
-    map["ц"] = "c";
-    map["ч"] = "ch";
-    map["ш"] = "sh";
-    map["щ"] = "shh";
-    map["ъ"] = "\"";
-    map["ы"] = "y";
-    map["ь"] = "'";
-    map["э"] = "eh";
-    map["ю"] = "ju";
-    map["я"] = "ja";
+    rusMap["е"] = "e";
+    rusMap["ё"] = "jo";
+    rusMap["ж"] = "zh";
+    rusMap["и"] = "i";
+    rusMap["й"] = "jj";
+    rusMap["х"] = "kh";
+    rusMap["ц"] = "c";
+    rusMap["ч"] = "ch";
+    rusMap["ш"] = "sh";
+    rusMap["щ"] = "shh";
+    rusMap["ъ"] = "\"";
+    rusMap["ы"] = "y";
+    rusMap["ь"] = "'";
+    rusMap["э"] = "eh";
+    rusMap["ю"] = "ju";
+    rusMap["я"] = "ja";
+    setEngMap();
     setUppercase();
-    transliterationMethod.push_back(map);
+    transliterationRusMethod.push_back(rusMap);
 }
 
 void TransliterationMethods::setStandartSymbols(){
-    map["а"] = "a";
-    map["б"] = "b";
-    map["в"] = "v";
-    map["г"] = "g";
-    map["д"] = "d";
-    map["з"] = "z";
-    map["к"] = "k";
-    map["л"] = "l";
-    map["м"] = "m";
-    map["н"] = "n";
-    map["о"] = "o";
-    map["п"] = "p";
-    map["р"] = "r";
-    map["с"] = "s";
-    map["т"] = "t";
-    map["у"] = "u";
-    map["ф"] = "f";
-    map[" "] = " ";
-    map["\n"] = "\n";
+    rusMap["а"] = "a";
+    rusMap["б"] = "b";
+    rusMap["в"] = "v";
+    rusMap["г"] = "g";
+    rusMap["д"] = "d";
+    rusMap["з"] = "z";
+    rusMap["к"] = "k";
+    rusMap["л"] = "l";
+    rusMap["м"] = "m";
+    rusMap["н"] = "n";
+    rusMap["о"] = "o";
+    rusMap["п"] = "p";
+    rusMap["р"] = "r";
+    rusMap["с"] = "s";
+    rusMap["т"] = "t";
+    rusMap["у"] = "u";
+    rusMap["ф"] = "f";
+    rusMap[" "] = " ";
+    rusMap["\n"] = "\n";
 }
 
 void TransliterationMethods::setUppercase(){
-    map["А"] = map["a"];
-    map["Б"] = map["б"];
-    map["В"] = map["в"];
-    map["Г"] = map["г"];
-    map["Д"] = map["д"];
-    map["Е"] = map["е"];
-    map["Ё"] = map["ё"];
-    map["Ж"] = map["ж"];
-    map["З"] = map["з"];
-    map["И"] = map["и"];
-    map["Й"] = map["й"];
-    map["К"] = map["к"];
-    map["Л"] = map["л"];
-    map["М"] = map["м"];
-    map["Н"] = map["н"];
-    map["О"] = map["о"];
-    map["П"] = map["п"];
-    map["Р"] = map["р"];
-    map["С"] = map["с"];
-    map["Т"] = map["т"];
-    map["У"] = map["у"];
-    map["Ф"] = map["ф"];
-    map["Х"] = map["х"];
-    map["Ц"] = map["ц"];
-    map["Ч"] = map["ч"];
-    map["Ш"] = map["ш"];
-    map["Щ"] = map["щ"];
-    map["Ъ"] = map["ъ"];
-    map["Ы"] = map["ы"];
-    map["Ь"] = map["ь"];
-    map["Э"] = map["э"];
-    map["Ю"] = map["ю"];
-    map["Я"] = map["я"];
-    map[" "] = map[" "];
+    rusMap["А"] = rusMap["a"];
+    rusMap["Б"] = rusMap["б"];
+    rusMap["В"] = rusMap["в"];
+    rusMap["Г"] = rusMap["г"];
+    rusMap["Д"] = rusMap["д"];
+    rusMap["Е"] = rusMap["е"];
+    rusMap["Ё"] = rusMap["ё"];
+    rusMap["Ж"] = rusMap["ж"];
+    rusMap["З"] = rusMap["з"];
+    rusMap["И"] = rusMap["и"];
+    rusMap["Й"] = rusMap["й"];
+    rusMap["К"] = rusMap["к"];
+    rusMap["Л"] = rusMap["л"];
+    rusMap["М"] = rusMap["м"];
+    rusMap["Н"] = rusMap["н"];
+    rusMap["О"] = rusMap["о"];
+    rusMap["П"] = rusMap["п"];
+    rusMap["Р"] = rusMap["р"];
+    rusMap["С"] = rusMap["с"];
+    rusMap["Т"] = rusMap["т"];
+    rusMap["У"] = rusMap["у"];
+    rusMap["Ф"] = rusMap["ф"];
+    rusMap["Х"] = rusMap["х"];
+    rusMap["Ц"] = rusMap["ц"];
+    rusMap["Ч"] = rusMap["ч"];
+    rusMap["Ш"] = rusMap["ш"];
+    rusMap["Щ"] = rusMap["щ"];
+    rusMap["Ъ"] = rusMap["ъ"];
+    rusMap["Ы"] = rusMap["ы"];
+    rusMap["Ь"] = rusMap["ь"];
+    rusMap["Э"] = rusMap["э"];
+    rusMap["Ю"] = rusMap["ю"];
+    rusMap["Я"] = rusMap["я"];
+    rusMap[" "] = rusMap[" "];
 }
 
-QMap<QString, QString> TransliterationMethods::getMap(int methodNumber){
-    return transliterationMethod[methodNumber];
+void TransliterationMethods::setEngMap(){
+    engMap.clear();
+    foreach (QString key, rusMap.keys()){
+      engMap[rusMap.value(key)] = key;
+    }
+    transliterationEngMethod.push_back(engMap);
+}
+
+QMap<QString, QString> TransliterationMethods::getRusMap(int methodNumber){
+    return transliterationRusMethod[methodNumber];
+}
+
+QMap<QString, QString> TransliterationMethods::getEngMap(int methodNumber){
+    return transliterationEngMethod[methodNumber];
 }
