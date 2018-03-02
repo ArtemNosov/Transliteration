@@ -1,6 +1,7 @@
 #ifndef TRANSLITERATION_H
 #define TRANSLITERATION_H
 
+#include "transliteration_methods.h"
 #include <QWidget>
 #include <QString>
 #include <QClipboard>
@@ -10,29 +11,27 @@
 #include <fstream>
 #include <QList>
 #include <QPair>
-
-#include "transliterationmethods.h"
+#include <QKeyEvent>
 
 namespace Ui {
 class Transliteration;
 }
 
-class Transliteration : public QWidget
-{
-    Q_OBJECT
-
+class transliteration : public QWidget{
+  Q_OBJECT
 public:
-    explicit Transliteration(QWidget *parent = 0);
-    ~Transliteration();
-
+  explicit transliteration(QWidget *parent = 0);
+  ~transliteration();
 public slots:
-    void translateButtonProcessing();
-    void bufferButtonProcessing();
-   // bool isRusSymbol(QChar symbol);
-
+  // Слот, срабатывающий при нажатии на кнопку "Перевести".
+  void TranslateButtonProcessing();
+  // Слот, срабатывающий при нажатии на кнопку "Копировать в буфер".
+  void BufferButtonProcessing();
+protected:
+  void keyPressEvent(QKeyEvent* aEvent);
 private:
-    Ui::Transliteration *ui;
-    TransliterationMethods transliterationMethods;
+  Ui::Transliteration *ui_;
+  transliteration_methods transliterationMethods_;
 };
 
 #endif // TRANSLITERATION_H

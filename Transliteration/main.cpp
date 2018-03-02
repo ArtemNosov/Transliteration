@@ -2,13 +2,10 @@
 #include <QApplication>
 #include <QTextCodec>
 
-int main(int argc, char *argv[])
-{
-    //QTextCodec::setCodecForCStrings(QTextCodec::codecForName("utf-16"));
-
+int main(int argc, char *argv[]){
     QApplication a(argc, argv);
-    Transliteration w;
+    transliteration w;
     w.show();
-
+    //
     return a.exec();
 }

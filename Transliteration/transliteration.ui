@@ -72,7 +72,62 @@
    </item>
    <item>
     <property name="text">
+     <string>ГОСТ 16876-71 (Таблица 1)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
      <string>ГОСТ 16876-71 (Таблица 2)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>BGN/PCGN</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Британский стандарт</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ALA-LC</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Водительское удостоверение (Приказ МВД 782)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Водительское удостоверение (Приказ МВД 995)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Загранпаспорт (Приказ МВД 310)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Загранпаспорт (ГОСТ Р 522535.1)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Загранпаспорт (Стандарт ИКАО)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Загранпаспорт (Приказ МИД 4271)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Международные телеграммы</string>
     </property>
    </item>
   </widget>
@@ -112,7 +167,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Транслит -&gt; Русский</string>
+    <string>Латиница -&gt; Русский</string>
    </property>
   </widget>
   <widget class="QRadioButton" name="rusButton">
@@ -125,7 +180,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Русский -&gt; Транслит</string>
+    <string>Русский -&gt; Латиница</string>
    </property>
    <property name="checked">
     <bool>true</bool>
