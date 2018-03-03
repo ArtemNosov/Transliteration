@@ -21,6 +21,8 @@ class transliteration : public QWidget{
   Q_OBJECT
 public:
   explicit transliteration(QWidget *parent = 0);
+  // Функция для тестирования.
+  QString TestFunction(bool aIsDictionary, bool aIsRus, int aTranslateIndex, QString aText);
   ~transliteration();
 public slots:
   // Слот, срабатывающий при нажатии на кнопку "Перевести".

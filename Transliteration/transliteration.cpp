@@ -150,6 +150,26 @@ void transliteration::keyPressEvent(QKeyEvent *aEvent){
   }
 }
 
+QString transliteration::TestFunction(bool aIsDictionary, bool aIsRus, int aTranslateIndex, QString aText){
+  // Устанавливаем нужный нам перевод.
+  if (aIsRus){
+    ui_->rusButton->setChecked(true);
+  } else{
+    ui_->engButton->setChecked(true);
+  }
+  // Проверяем, нужно ли использовать словарь.
+  if (aIsDictionary){
+      ui_->checkBox->setChecked(true);
+  }
+  // Устанавливаем метод перевода.
+  ui_->comboBox->setCurrentIndex(aTranslateIndex);
+  // Устанавливаем текст для перевода.
+  ui_->firstTextEdit->setText(aText);
+  // Вызов метода для транслитерации.
+  TranslateButtonProcessing();
+  return ui_->secondTextEdit->toPlainText();
+}
+
 transliteration::~transliteration(){
   delete ui_;
 }

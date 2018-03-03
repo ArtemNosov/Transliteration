@@ -249,7 +249,7 @@ void transliteration_methods::PrikazMVD995(){
   rusMap_["щ"] = "shch";
   rusMap_["ъ"] = "ie";
   rusMap_["ы"] = "y";
-  rusMap_["ь"] = "";
+  rusMap_["ь"] = "'";
   rusMap_["э"] = "e";
   rusMap_["ю"] = "iu";
   rusMap_["я"] = "ia";
@@ -295,9 +295,9 @@ void transliteration_methods::GOST525351(){
   rusMap_["ч"] = "ch";
   rusMap_["ш"] = "sh";
   rusMap_["щ"] = "shch";
-  rusMap_["ъ"] = "";
+  rusMap_["ъ"] = "'";
   rusMap_["ы"] = "y";
-  rusMap_["ь"] = "";
+  rusMap_["ь"] = "'";
   rusMap_["э"] = "e";
   rusMap_["ю"] = "iu";
   rusMap_["я"] = "ia";
@@ -321,7 +321,7 @@ void transliteration_methods::StandartIKAO(){
   rusMap_["щ"] = "shch";
   rusMap_["ъ"] = "ie";
   rusMap_["ы"] = "y";
-  rusMap_["ь"] = "";
+  rusMap_["ь"] = "'";
   rusMap_["э"] = "e";
   rusMap_["ю"] = "iu";
   rusMap_["я"] = "ia";
@@ -345,7 +345,7 @@ void transliteration_methods::PrikazMID4271(){
   rusMap_["щ"] = "shch";
   rusMap_["ъ"] = "ie";
   rusMap_["ы"] = "y";
-  rusMap_["ь"] = "";
+  rusMap_["ь"] = "'";
   rusMap_["э"] = "e";
   rusMap_["ю"] = "iu";
   rusMap_["я"] = "ia";
@@ -367,9 +367,9 @@ void transliteration_methods::MezhdynarodnyeTellegramy(){
   rusMap_["ч"] = "ch";
   rusMap_["ш"] = "sh";
   rusMap_["щ"] = "sc";
-  rusMap_["ъ"] = "";
+  rusMap_["ъ"] = "'";
   rusMap_["ы"] = "y";
-  rusMap_["ь"] = "";
+  rusMap_["ь"] = "'";
   rusMap_["э"] = "e";
   rusMap_["ю"] = "iu";
   rusMap_["я"] = "ia";
